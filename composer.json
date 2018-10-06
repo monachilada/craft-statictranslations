@@ -1,5 +1,5 @@
 {
-    "name": "monachilada/static-translations",
+    "name": "monachilada/craft-statictranslations",
     "description": "Detect changes in your templates and edit static translation strings from the Control Panel.",
     "type": "craft-plugin",
     "version": "1.0.0",
@@ -11,8 +11,8 @@
         "static translations"
     ],
     "support": {
-        "docs": "https://github.com/monachilada/static-translations/blob/master/README.md",
-        "issues": "https://github.com/monachilada/static-translations/issues"
+        "docs": "https://github.com/monachilada/craft-statictranslations/blob/master/README.md",
+        "issues": "https://github.com/monachilada/craft-statictranslations/issues"
     },
     "license": "MIT",
     "authors": [
@@ -31,10 +31,10 @@
     },
     "extra": {
         "name": "Static Translations",
-        "handle": "static-translations",
+        "handle": "statictranslations",
         "hasCpSettings": true,
         "hasCpSection": true,
-        "changelogUrl": "https://raw.githubusercontent.com/monachilada/static-translations/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/monachilada/craft-statictranslations/master/CHANGELOG.md",
         "components": {
             "staticTranslationsService": "monachilada\\statictranslations\\services\\StaticTranslationsService"
         },
