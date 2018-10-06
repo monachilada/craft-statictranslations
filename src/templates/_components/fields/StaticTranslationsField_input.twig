@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Static Translations plugin for Craft CMS 3.x
+ *
+ * StaticTranslationsField Field Input
+ *
+ * @author    Mike Pierce
+ * @copyright Copyright (c) 2018 Mike Pierce
+ * @link      https://michaelpierce.trade/
+ * @package   StaticTranslations
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

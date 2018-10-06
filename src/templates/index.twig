@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Static Translations plugin for Craft CMS 3.x
+ *
+ * Static Translations index.twig
+ *
+ * @author    Mike Pierce
+ * @copyright Copyright (c) 2018 Mike Pierce
+ * @link      https://michaelpierce.trade/
+ * @package   StaticTranslations
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("monachilada\\statictranslations\\assetbundles\\statictranslations\\StaticTranslationsAsset") %}
+{% do view.registerAssetBundle("monachilada\\statictranslations\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/monachilada/static-translations/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "Static Translations" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('static-translations') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@monachilada/statictranslations/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('static-translations') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('static-translations') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

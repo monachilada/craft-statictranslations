@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Static Translations plugin for Craft CMS
+ *
+ * StaticTranslationsUtility Utility Content
+ *
+ * @author    Mike Pierce
+ * @copyright Copyright (c) 2018 Mike Pierce
+ * @link      https://michaelpierce.trade/
+ * @package   StaticTranslations
+ * @since     1.0.0
+ */
+#}
+
+<h1>StaticTranslationsUtility</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@monachilada/statictranslations/assetbundles/statictranslationsutilityutility/dist', true) ~ '/img/StaticTranslationsUtility-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>
